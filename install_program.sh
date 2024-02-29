@@ -51,7 +51,7 @@ mv IGV_Linux_2.17.2 IGV
 git clone https://github.com/tseemann/snp-dists.git /program/snp-dists
 cd /program/snp-dists; make
 cd ~
-echo 'export PATH="/program/snp-dists:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/program/snp-dists/snp-dists:$PATH"' >> ~/.bash_profile
 
 ## install gatk
 git clone https://github.com/broadinstitute/gatk.git /program/gatk
