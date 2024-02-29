@@ -4,10 +4,8 @@ sudo apt upgrade -y
 sudo mkdir -p /program
 export USERNAME=$(whoami)
 sudo chown -R $USERNAME:$USERNAME /program
-# sudo chown -R test1:test1 /program
 sudo apt install -y default-jre wget unzip perl-modules python3-pip git man-db gawk libncurses5-dev libncursesw5-dev libbz2-dev liblzma-dev openjdk-17-jdk git-lfs
 sudo ln -sf /usr/bin/python3 /usr/bin/python
-# sudo apt install -y gawk libncurses5-dev libncursesw5-dev libbz2-dev liblzma-dev
 
 ## install multiqc
 pip install multiqc
@@ -22,7 +20,7 @@ echo 'export PATH="/program/FastQC:$PATH"' >> ~/.bash_profile
 
 ## install fastp
 mkdir -p /program/fastp
-wget http://opengene.org/fastp/fastp -O /program/fastp/fastp
+wget https://opengene.org/fastp/fastp -O /program/fastp/fastp
 chmod a+x /program/fastp/fastp
 echo 'export PATH="/program/fastp:$PATH"' >> ~/.bash_profile
 
